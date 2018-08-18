@@ -1,11 +1,12 @@
 import { Component, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpEventType, HttpRequest, HttpErrorResponse, HttpEvent } from '@angular/common/http';
+// import { HttpClient, HttpHeaders, HttpEventType, HttpRequest, HttpErrorResponse, HttpEvent } from '@angular/common/http';
+import { HttpEvent, HttpEventType } from '@angular/common/http';
 
 import { FormControl, FormGroup, Validators, NgForm } from '@angular/forms';
 import { Subscription } from 'rxjs/internal/Subscription';
 
 import { FileUploadClientService } from '../services/file-client/file-client.service';
-import { HttpUploadProgressEvent, HttpProgressEvent, HttpResponse } from '@angular/common/http/src/response';
+// import { HttpUploadProgressEvent, HttpProgressEvent, HttpResponse } from '@angular/common/http/src/response';
 
 @Component({
     selector: 'app-status-create',
