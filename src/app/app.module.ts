@@ -10,6 +10,8 @@ import { ProgressDemoComponent } from './progress-demo/progress-demo.component';
 import { RxjsDemoComponent } from './rxjs-demo/rxjs-demo.component';
 import { TabsModule } from './tabs-demo/tabs.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
     imports: [
@@ -24,6 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         SubC01Component,
         ProgressDemoComponent,
         RxjsDemoComponent,
+        HeaderComponent,
+        FooterComponent,
     ],
     providers: [],
     bootstrap: [AppComponent]
