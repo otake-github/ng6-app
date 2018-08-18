@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+// import { HttpClientModule } from '@angular/common/http';
 
 import { RxjsRoutingModule } from './rxjs-routing.module';
 import { NavComponent } from './nav/nav.component';
@@ -14,7 +14,7 @@ import { RxjsInMemoryDbService } from './services/rxjs-in-memory-db.service';
 @NgModule({
     imports: [
         CommonModule,
-        HttpClientModule,
+        // HttpClientModule,
         MatTabsModule,
         MatCardModule,
         RxjsRoutingModule,

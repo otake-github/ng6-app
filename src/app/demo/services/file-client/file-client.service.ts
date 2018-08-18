@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpEventType, HttpRequest, HttpErrorResponse, HttpEvent } from '@angular/common/http';
-
+// import { HttpClient, HttpHeaders, HttpEventType, HttpRequest, HttpErrorResponse, HttpEvent } from '@angular/common/http';
+import { HttpClient, HttpRequest } from '@angular/common/http';
 
 import { Observable } from 'rxjs/internal/Observable';
 // import { ErrorObservable } from 'rxjs/internal/observable/throwError';
-import { of } from 'rxjs/internal/observable/of';
-import { catchError, map, tap } from 'rxjs/operators';
+// import { of } from 'rxjs/internal/observable/of';
+// import { catchError, map, tap } from 'rxjs/operators';
 
 /* Naming NOTE
   The API's file field is `fileItem` thus, we name it the same below

@@ -1,21 +1,21 @@
 import { Injectable } from '@angular/core';
-// import { HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { RxjsItem } from 'common/resources/rxjs-entity';
-import { Observable, from } from 'rxjs';
+// import { Observable, from } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
 })
 export class RxjsService {
 
-    // constructor(private http: HttpClient) { }
-    constructor() { }
+    constructor(private http: HttpClient) { }
+    // constructor() { }
 
-    getItems() {
-        return from<RxjsItem[]>([]);
-    }
     // getItems() {
-    //     return this.http.get<RxjsItem[]>('api/items');
-    //     // return this.http.get<RxjsItem[]>('api/rxjs/items');
+    //     return from<RxjsItem[]>([]);
     // }
+    getItems() {
+        return this.http.get<RxjsItem[]>('api/items');
+        // return this.http.get<RxjsItem[]>('api/rxjs/items');
+    }
 }

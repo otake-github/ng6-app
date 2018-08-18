@@ -11,6 +11,7 @@ export class NavComponent implements OnInit {
         { path: 'sub-c01', label: 'sub-c01' },
         { path: 'progress-demo', label: 'progress-demo' },
         { path: 'rxjs-demo', label: 'rxjs-demo' },
+        { path: 'status-create', label: 'status-create' },
     ];
 
     constructor() { }
