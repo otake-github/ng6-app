@@ -9,6 +9,7 @@ const routes: Routes = [
     { path: 'sub-c01', component: SubC01Component },
     { path: 'progress-demo', component: ProgressDemoComponent },
     { path: 'rxjs-demo', component: RxjsDemoComponent },
+    { path: 'rxjs', loadChildren: './rxjs/rxjs.module#RxjsModule' },
     { path: 'tabs-demo', loadChildren: './tabs-demo/tabs.module#TabsModule' },
 ];
 

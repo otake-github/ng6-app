@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { SubC01Component } from './sub-c01/sub-c01.component';
 import { ProgressDemoComponent } from './progress-demo/progress-demo.component';
 import { RxjsDemoComponent } from './rxjs-demo/rxjs-demo.component';
-import { TabsModule } from './tabs-demo/tabs.module';
+// import { TabsModule } from './tabs-demo/tabs.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';

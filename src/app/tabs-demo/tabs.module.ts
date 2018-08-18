@@ -15,9 +15,9 @@ import { Tab03Component } from './tab03/tab03.component';
         TabsRoutingModule,
     ],
     declarations: [
+        NavComponent,
         Tab01Component,
         Tab02Component,
-        NavComponent,
         Tab03Component,
     ],
     providers: [],
