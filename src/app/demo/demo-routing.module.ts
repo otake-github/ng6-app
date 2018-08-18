@@ -6,9 +6,6 @@ import { RxjsDemoComponent } from './rxjs-demo/rxjs-demo.component';
 import { NavComponent } from './nav/nav.component';
 
 const routes: Routes = [
-    // // { path: 'sub-c01', component: SubC01Component },
-    // // { path: 'progress-demo', component: ProgressDemoComponent },
-    // // { path: 'rxjs-demo', component: RxjsDemoComponent },
     {
         path: '',
         component: NavComponent,
