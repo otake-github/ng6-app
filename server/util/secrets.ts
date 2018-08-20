@@ -2,7 +2,7 @@
 import dotenv from 'dotenv';
 import fs from 'fs';
 
-import LoggerFactory from './LoggerFactory';
+import { LoggerFactory } from './LoggerFactory';
 const logger = LoggerFactory.getLogger();
 
 if (fs.existsSync('.env')) {

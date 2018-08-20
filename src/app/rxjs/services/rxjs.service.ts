@@ -16,6 +16,7 @@ export class RxjsService {
     // }
     getItems() {
         return this.http.get<RxjsItem[]>('api/items');
+        // return this.http.get<RxjsItem[]>('api/rxjs/demo01/items');
         // return this.http.get<RxjsItem[]>('api/rxjs/items');
     }
 }

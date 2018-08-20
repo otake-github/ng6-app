@@ -1,32 +1,26 @@
-import path from 'path';
-import { Request, Response, Router } from 'express';
+// import { Request, Response, Router } from 'express';
+import { Router } from 'express';
 
-import LoggerFactory from '../util/LoggerFactory';
-const logger = LoggerFactory.getLogger();
+import { ApiController } from '../controllers/api-controller';
 
-export class ApiController {
+// import { LoggerFactory } from '../util/LoggerFactory';
+// const logger = LoggerFactory.getLogger();
 
-    /**
-     * GET /
-     * Home page.
-     */
-    index(req: Request, res: Response) {
-        const filePath = path.join(__dirname, '../index.html');
-
-        logger.log('index: __dirname=%s', __dirname);
-        logger.log('index: filePath=%s', filePath);
-
-        res.sendFile(filePath);
-    }
-}
-
-export const ApiRouterFactory = {
-    create: () => {
-        const controller = new ApiController();
+export class ApiRouterFactory {
+    create() {
         const router = Router();
 
-        router.get('/api', controller.index.bind(controller));
+        this.bindApi(router);
 
         return router;
     }
-};
+
+    private bindApi(router: Router) {
+        const controller = new ApiController();
+        router.get('/api', controller.index.bind(controller));
+        router.get('/api/items', controller.items.bind(controller));
+
+        return router;
+    }
+
+}
