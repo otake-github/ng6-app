@@ -7,8 +7,8 @@ import { NavComponent } from './nav/nav.component';
 import { RjxsDemo01Component } from './rjxs-demo01/rjxs-demo01.component';
 import { RjxsDemo02Component } from './rjxs-demo02/rjxs-demo02.component';
 import { RjxsDemo03Component } from './rjxs-demo03/rjxs-demo03.component';
-import { MatCardModule, MatTabsModule } from '@angular/material';
-import { HttpClientInMemoryWebApiModule, InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { MatCardModule, MatTabsModule, MatTableModule } from '@angular/material';
+// import { HttpClientInMemoryWebApiModule, InMemoryWebApiModule } from 'angular-in-memory-web-api';
 // import { RxjsInMemoryDbService } from './services/rxjs-in-memory-db.service';
 import { RxjsService } from './services/rxjs.service';
 
@@ -18,6 +18,7 @@ import { RxjsService } from './services/rxjs.service';
         // HttpClientModule,
         MatTabsModule,
         MatCardModule,
+        MatTableModule,
         RxjsRoutingModule,
         // // HttpClientInMemoryWebApiModule.forRoot(RxjsInMemoryDbService, {
         // InMemoryWebApiModule.forRoot(RxjsInMemoryDbService, {

@@ -9,7 +9,10 @@ import { RxjsItem } from 'common/resources/rxjs-entity';
 })
 export class RjxsDemo01Component implements OnInit {
 
-    items: RxjsItem[];
+    displayedColumns: string[] = [
+        'id', 'name',
+    ];
+    dataSource: RxjsItem[];
 
     constructor(private service: RxjsService) { }
 
@@ -21,7 +24,8 @@ export class RjxsDemo01Component implements OnInit {
 
         const subscription = this.service.getItems()
             .subscribe(response => {
-                this.items = response;
+                console.log('onClick() -> subscribe(): response=%o', response);
+                this.dataSource = response.items ? response.items : [];
             });
 
         console.log('subscription.closed=%s', subscription.closed);
