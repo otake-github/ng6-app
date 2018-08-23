@@ -1,4 +1,4 @@
-import { BaseError } from 'common/error/base.error';
+import { BaseError } from '@@common/error/base.error';
 
 export class ServerError extends BaseError {
     constructor(message: string) {
