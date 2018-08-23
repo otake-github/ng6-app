@@ -5,14 +5,17 @@
         // // "esModuleInterop": true,
         // "target": "es2015",
         // "baseUrl": "./",
-        "outDir": "../dist/server",
+        "outDir": "../spec/src",
         // "paths": {
         //   "*": [
         //     "node_modules/*",
         //     "src/types/*"
         //   ]
         // },
-        "types": []
+        "types": [
+            "jasmine",
+            "node"
+        ]
     },
     "include": [
         "./**/*.ts",
@@ -20,13 +23,4 @@
         "../common/**/*.ts",
         "../common/*.ts"
     ],
-    "exclude": [
-        "**/*.spec.ts",
-    ]
-    // "exclude": [
-    //   "**/test.ts",
-    //   "**/*.spec.ts",
-    //   "**/app/*.ts",
-    //   "**/app/**/*.ts"
-    // ]
 }
