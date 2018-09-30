@@ -17,6 +17,7 @@
         "tsc": "tsc",
         "build:sv": "tsc --project server/tsconfig.server.json",
         "build:sv-w": "tsc --project server/tsconfig.server.json -w",
+        "test:test": "ts-node -r tsconfig-paths/register --project server/tsconfig.spec.json node_modules/jasmine/bin/jasmine.js",
         "test:sv-build": "tsc --project server/tsconfig.spec.json",
         "test:sv-init:sv": "node ./node_modules/jasmine/bin/jasmine.js init",
         "test:sv-ts": "ts-node -r tsconfig-paths/register --project server/tsconfig.spec.json node_modules/jasmine/bin/jasmine.js",
